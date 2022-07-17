@@ -2,7 +2,7 @@
 @section('name_page', 'ข้อมูลบัญชี')
 @section('button_page')
     <button type="button" class="btn btn-success" data-toggle="modal" data-target="#edit_user">
-        <i class="fas fa-user-plus fa-sm text-white-50"></i> เพิ่มข้อมูลลูกค้า
+        <i class="fas fa-user-plus fa-sm text-white-50"></i> เพิ่มข้อมูลบัญชีลูกค้า
     </button>
 
 

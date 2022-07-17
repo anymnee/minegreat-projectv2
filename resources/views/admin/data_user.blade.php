@@ -154,8 +154,8 @@
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">ปิดออก</button>
-                    <button type="button" class="btn btn-primary" onclick="add_user()">บันทึกข้อมูล</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">ยกเลิก</button>
+                    <button type="button" class="btn btn-primary" onclick="add_user()">บันทึก</button>
                 </div>
             </div>
         </div>
