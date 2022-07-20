@@ -109,54 +109,57 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body">
-                    <form class="form-user">
-                        @csrf
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">รหัสลูกค้า</label>
-                            <input type="text" class="form-control" id="number_customers" name="number_customers" aria-describedby="emailHelp"
-                                placeholder="รหัสลูกค้า">
+                <form class="form-user" method="POST" action="{{route('add.user')}}">
+                    @csrf
+                    <div class="modal-body">
+                        
                             
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputPassword1">ชื่อ</label>
-                            <input type="text" class="form-control" id="first_name" name="first_name" placeholder="ชื่อลูกค้า">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputPassword1">นามสกุล</label>
-                            <input type="text" class="form-control" id="last_name" name="last_name" placeholder="นามสกุลลูกค้า">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputPassword1">อายุ</label>
-                            <input type="text" class="form-control" id="age" name="age" placeholder="อายุลูกค้า">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputPassword1">เบอร์โทร</label>
-                            <input type="text" class="form-control" id="tel" name="tel" placeholder="เบอร์โทรลูกค้า">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputPassword1">เลขบัตรประชาชน</label>
-                            <input type="text" class="form-control" id="cid" name="cid" placeholder="เลขบัตรประชาชนลูกค้า">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputPassword1">ชื่อผู้ใช้งาน</label>
-                            <input type="text" class="form-control" id="username" name="username" placeholder="ตั้งค่าชื่อผู้ใช้งาน">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputPassword1">รหัสผ่าน</label>
-                            <input type="password" class="form-control" id="cid" name="cid" placeholder="ตั้งค่ารหัสผ่าน">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputPassword1">ยืนยันรหัสผ่าน</label>
-                            <input type="password" class="form-control" id="cid" name="cid" placeholder="ใส่รหัสผ่านอีกครั้ง">
-                        </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">รหัสลูกค้า</label>
+                                <input type="text" class="form-control" id="number_customers" name="number_customers" aria-describedby="emailHelp"
+                                    placeholder="รหัสลูกค้า">
+                                
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">ชื่อ</label>
+                                <input type="text" class="form-control" id="first_name" name="first_name" placeholder="ชื่อลูกค้า">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">นามสกุล</label>
+                                <input type="text" class="form-control" id="last_name" name="last_name" placeholder="นามสกุลลูกค้า">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">อายุ</label>
+                                <input type="text" class="form-control" id="age" name="age" placeholder="อายุลูกค้า">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">เบอร์โทร</label>
+                                <input type="text" class="form-control" id="tel" name="tel" placeholder="เบอร์โทรลูกค้า">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">เลขบัตรประชาชน</label>
+                                <input type="text" class="form-control" id="cid" name="cid" placeholder="เลขบัตรประชาชนลูกค้า">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">ชื่อผู้ใช้งาน</label>
+                                <input type="text" class="form-control" id="username" name="username" placeholder="ตั้งค่าชื่อผู้ใช้งาน">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">รหัสผ่าน</label>
+                                <input type="password" class="form-control" id="cid" name="cid" placeholder="ตั้งค่ารหัสผ่าน">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">ยืนยันรหัสผ่าน</label>
+                                <input type="password" class="form-control" id="cid" name="cid" placeholder="ใส่รหัสผ่านอีกครั้ง">
+                            </div>
 
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">ยกเลิก</button>
-                    <button type="button" class="btn btn-primary" onclick="add_user()">บันทึก</button>
-                </div>
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">ยกเลิก</button>
+                        <button type="submit" class="btn btn-primary">บันทึก</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>

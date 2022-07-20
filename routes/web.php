@@ -39,11 +39,11 @@ Auth::routes();
     Route::get('/payment',function (){
         return view('admin.payment');
     });
-    Route::post('add_user', [App\Http\Controllers\UserController::class, 'adduser']);
+    Route::post('add_user', [App\Http\Controllers\UserController::class, 'adduser'])->name('add.user');
     Route::get('/logout', [App\Http\Controllers\UserController::class, 'logout']);
 
     Route::get('/register', function () {
         return view('customer/register');
     });
-    Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+    //Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 // });

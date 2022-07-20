@@ -11,7 +11,7 @@ class UserController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth');
+        //$this->middleware('auth');
     }
 
     public function login(Request $request)
@@ -46,12 +46,6 @@ class UserController extends Controller
        $user->username = $request->input('username');
        $user->password = $request->input('password');
        $user->save();
-       return response()->json(
-        [
-            'success' => true,
-            'message' => 'success',
-        ]
-        );
-
+        return back();
     }
 }
