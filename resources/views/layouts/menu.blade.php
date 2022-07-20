@@ -20,7 +20,8 @@
 
     <!-- Custom styles for this template-->
     <link href="{{ asset('css/sb-admin-2.min.css') }}" rel="stylesheet">
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    @stack('css')
 
 </head>
 
@@ -277,13 +278,16 @@
             <script src="{{ asset('js/sb-admin-2.min.js') }}"></script>
             <script src="{{ asset('js/user.js') }}"></script>
 
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.23/dist/sweetalert2.all.min.js"></script>
+
             <!-- Page level plugins -->
-            <script src="{{ asset('vendor/chart.js/Chart.min.js') }}"></script>
+            {{-- <script src="{{ asset('vendor/chart.js/Chart.min.js') }}"></script> --}}
 
             <!-- Page level custom scripts -->
-            <script src="{{ asset('js/demo/chart-area-demo.js') }}"></script>
-            <script src="{{ asset('js/demo/chart-pie-demo.js') }}"></script>
+            {{-- <script src="{{ asset('js/demo/chart-area-demo.js') }}"></script> --}}
+            {{-- <script src="{{ asset('js/demo/chart-pie-demo.js') }}"></script> --}}
 
+            @stack('scripts')
 
 </body>
 

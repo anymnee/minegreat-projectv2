@@ -109,15 +109,12 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <form class="form-user" method="POST" action="{{route('add.user')}}">
+                <form class="form-user form-add-user" method="POST" action="{{route('add.user')}}">
                     @csrf
                     <div class="modal-body">
-                        
-                            
                             <div class="form-group">
                                 <label for="exampleInputEmail1">รหัสลูกค้า</label>
-                                <input type="text" class="form-control" id="number_customers" name="number_customers" aria-describedby="emailHelp"
-                                    placeholder="รหัสลูกค้า">
+                                <input type="text" class="form-control" id="number_customers" name="number_customers" placeholder="รหัสลูกค้า" required>
                                 
                             </div>
                             <div class="form-group">
@@ -146,7 +143,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">รหัสผ่าน</label>
-                                <input type="password" class="form-control" id="cid" name="cid" placeholder="ตั้งค่ารหัสผ่าน">
+                                <input type="password" class="form-control" id="password" name="cid" placeholder="ตั้งค่ารหัสผ่าน">
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">ยืนยันรหัสผ่าน</label>
@@ -157,10 +154,37 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">ยกเลิก</button>
-                        <button type="submit" class="btn btn-primary">บันทึก</button>
+                        <button type="button" class="btn btn-primary submitBtn">บันทึก</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
 @endsection
+
+@push('css')
+<style>
+    .test {
+        background: red;
+        border-radius: 50px;
+    }
+</style>
+@endpush
+
+@push('scripts')
+<script>
+    $('.submitBtn').on('click', function () {
+        Swal.fire({
+                title: 'Error!',
+                text: 'Do you want to continue',
+                icon: 'warning',
+                confirmButtonText: 'ok',
+                showCancelButton: true,
+        }).then(result => {
+            if (!result.isConfirmed) return;
+
+            $('.form-add-user').submit();
+        });
+    });
+</script>
+@endpush

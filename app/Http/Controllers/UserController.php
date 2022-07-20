@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Users;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Session;
 
 class UserController extends Controller
@@ -36,16 +38,19 @@ class UserController extends Controller
 
     public function adduser(Request $request)
     {
-       $user = new Users;
-       $user->number_customers = $request->input('number_customers');
-       $user->first_name = $request->input('first_name');
-       $user->last_name = $request->input('last_name');
-       $user->age = $request->input('age');
-       $user->tel = $request->input('tel');
-       $user->cid = $request->input('cid');
-       $user->username = $request->input('username');
-       $user->password = $request->input('password');
-       $user->save();
+        DB::beginTransaction();
+        $user = new Users;
+        $user->number_customers = $request->input('number_customers');
+        $user->first_name = $request->input('first_name');
+        $user->last_name = $request->input('last_name');
+        $user->age = $request->input('age');
+        $user->tel = $request->input('tel');
+        $user->cid = $request->input('cid');
+        $user->username = $request->input('username');
+        $user->password = Hash::make($request->input('password'));
+        $user->save();
+        DB::commit();
+
         return back();
     }
 }
