@@ -65,30 +65,55 @@
             <!-- Nav Item - Charts -->
             <li class="nav-item">
                 <a class="nav-link" href="{{ url('data_user') }}">
-                    <i class="fas fa-user-alt"></i>
-                    <span>ข้อมูลทั่วไป</span></a>
+                    <i class="fas fa-user-alt text-gray-400"></i>
+                    <span>ข้อมูลลูกค้า</span></a>
             </li>
 
             <!-- Nav Item - Tables -->
             <li class="nav-item">
                 <a class="nav-link" href="{{ url('accounting') }}">
-                    <i class="fas fa-file-invoice"></i>
-                    <span>ข้อมูลบัญชี</span></a>
+                    <i class="fas fa-file-invoice text-gray-400"></i>
+                    <span>บัญชีลูกค้า</span></a>
             </li>
 
             <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
                     aria-expanded="true" aria-controls="collapseUtilities">
-                    <i class="fas fa-coins	"></i>
-                    <span>การชำระยอดผ่อน</span>
+                    <i class="fas fa-coins text-gray-400	"></i>
+                    <span>การผ่อนชำระ</span>
                 </a>
                 <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         {{-- <h6 class="collapse-header">Custom Utilities:</h6> --}}
-                        <a class="collapse-item" href="{{ url('payment') }}">การชำระยอดผ่อนลูกค้า</a>
-                        <a class="collapse-item" href="{{ url('check_payment') }}">ตรวจสอบยอดผ่อนลูกค้า</a>
+                        <a class="collapse-item" href="{{ url('payment') }}">ข้อมูลการผ่อนชำระ</a>
+                        <a class="collapse-item" href="{{ url('check_payment') }}">ตรวจสอบการผ่อนชำระ</a>
+                        {{-- <a class="collapse-item" href="utilities-animation.html">Animations</a>
+                        <a class="collapse-item" href="utilities-other.html">Other</a> --}}
+                    </div>
+                </div>
+            </li>
+
+             <!-- Nav Item - Utilities Collapse Menu -->
+             <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+                    aria-expanded="true" aria-controls="collapseUtilities">
+                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                    <span>สถานะการผ่อน</span>
+                </a>
+                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        {{-- <h6 class="collapse-header">Custom Utilities:</h6> --}}
+                        <a class="collapse-item" href="{{ url('check_payment') }}">ผ่านการพิจารณา</a>
+                        <a class="collapse-item" href="{{ url('payment') }}">อยู่ระหว่างการพิจารณา</a>
+                        <a class="collapse-item" href="{{ url('payment') }}">ยกเลิกการผ่อน</a>
+                        <a class="collapse-item" href="{{ url('payment') }}">พักการผ่อน</a>
+                        <a class="collapse-item" href="{{ url('payment') }}">รอตรวจสอบเอกสาร</a>
+                        <a class="collapse-item" href="{{ url('check_payment') }}">รับสินค้า</a>
+                        <a class="collapse-item" href="{{ url('check_payment') }}">ค้างชำระ</a>
+                        <a class="collapse-item" href="{{ url('check_payment') }}">ชำระการผ่อนครบ</a>
                         {{-- <a class="collapse-item" href="utilities-animation.html">Animations</a>
                         <a class="collapse-item" href="utilities-other.html">Other</a> --}}
                     </div>
@@ -96,17 +121,20 @@
             </li>
 
             <!-- Divider -->
-            <hr class="sidebar-divider">
 
-            <!-- Heading -->
+            <hr class="sidebar-divider my-0">
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url('accounting') }}">
+                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                    <span>การตั้งค่า</span></a>
+            </li>
 
-
-            <!-- Nav Item - Pages Collapse Menu -->
-
-
-
-
-            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url('accounting') }}">
+                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                    <span>ออกจากระบบ</span></a>
+            </li>
             <hr class="sidebar-divider d-none d-md-block">
 
             <!-- Sidebar Toggler (Sidebar) -->
@@ -183,11 +211,11 @@
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">For Admin</span>
                                 <img class="img-profile rounded-circle" src="img/undraw_profile.svg">
                             </a>
                             <!-- Dropdown - User Information -->
-                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                            {{-- <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="userDropdown">
                                 <a class="dropdown-item" href="#">
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
@@ -206,7 +234,7 @@
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Logout
                                 </a>
-                            </div>
+                            </div> --}}
                         </li>
 
                     </ul>
