@@ -66,24 +66,26 @@
             <li class="nav-item">
                 <a class="nav-link" href="{{ url('data_user') }}">
                     <i class="fas fa-user-alt text-gray-400"></i>
-                    <span>ข้อมูลลูกค้า</span></a>
-            </li>
+                    <span>ข้อมูลลูกค้า</span>
+                </a>
+           
 
             <!-- Nav Item - Tables -->
-            <li class="nav-item">
+        
                 <a class="nav-link" href="{{ url('accounting') }}">
                     <i class="fas fa-file-invoice text-gray-400"></i>
-                    <span>บัญชีลูกค้า</span></a>
-            </li>
+                    <span>บัญชีลูกค้า</span>
+                </a>
+            
 
             <!-- Nav Item - Utilities Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+           
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#การผ่อนชำระ"
                     aria-expanded="true" aria-controls="collapseUtilities">
                     <i class="fas fa-coins text-gray-400	"></i>
                     <span>การผ่อนชำระ</span>
                 </a>
-                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
+                <div id="การผ่อนชำระ" class="collapse" aria-labelledby="headingUtilities"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         {{-- <h6 class="collapse-header">Custom Utilities:</h6> --}}
@@ -93,16 +95,17 @@
                         <a class="collapse-item" href="utilities-other.html">Other</a> --}}
                     </div>
                 </div>
-            </li>
+            
 
              <!-- Nav Item - Utilities Collapse Menu -->
-             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+            
+ 
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#สถานะการผ่อน"
                     aria-expanded="true" aria-controls="collapseUtilities">
                     <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
                     <span>สถานะการผ่อน</span>
                 </a>
-                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
+                <div id="สถานะการผ่อน" class="collapse" aria-labelledby="headingUtilities"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         {{-- <h6 class="collapse-header">Custom Utilities:</h6> --}}
@@ -118,19 +121,21 @@
                         <a class="collapse-item" href="utilities-other.html">Other</a> --}}
                     </div>
                 </div>
-            </li>
-
+            
+ 
             <!-- Divider -->
+            
+            
 
             <hr class="sidebar-divider my-0">
-            <li class="nav-item">
+           
                 <a class="nav-link" href="{{ url('accounting') }}">
                     <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
                     <span>การตั้งค่า</span></a>
-            </li>
+            
 
             <hr class="sidebar-divider my-0">
-            <li class="nav-item">
+           
                 <a class="nav-link" href="{{ url('accounting') }}">
                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                     <span>ออกจากระบบ</span></a>
