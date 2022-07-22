@@ -1,5 +1,14 @@
 @extends('layouts.menu')
-@section('name_page',"ตรวจสอบยอดผ่อนลูกค้า")
+@section('name_page',"ตรวจสอบการผ่อนชำระ")
 @section('content')
-    ำกถพดะุเัึ้ี่รตานสย
+   
+
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary"
+        >ตรวจสอบการผ่อนชำระของแต่ละคน ว่ายอดเงินที่โอน กับสลิปที่แนบมาถูกต้องหรือเปล่า</h6>
+    </div>
+
+</div>
+
 @endsection

@@ -112,39 +112,56 @@
                 <form class="form-user form-add-user" method="POST" action="{{route('add.user')}}">
                     @csrf
                     <div class="modal-body">
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">รหัสลูกค้า</label>
-                                <input type="text" class="form-control" id="number_customers" name="number_customers" placeholder="รหัสลูกค้า" required>
-                                
+
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text">รหัสลูกค้า</span>
                             </div>
-                            <div class="form-group">
+                            <input type="text" aria-label="First name" class="form-control" id="number_customers" name="number_customers" placeholder="รหัสลูกค้า" required>
+                          </div>
+
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text">ชื่อและนามสกุล</span>
+                                </div>
+                                <input type="text" aria-label="First name" class="form-control" id="first_name" name="first_name" placeholder="ชื่อลูกค้า">
+                                <input type="text" aria-label="Last name" class="form-control" id="last_name" name="last_name" placeholder="นามสกุลลูกค้า">
+                              </div>
+
+                              <div class="form-group">
+                                <label for="exampleInputPassword1">เลขบัตรประชาชน</label>
+                                <input type="text" class="form-control" id="cid" name="cid" placeholder="เลขบัตรประชาชนลูกค้า">
+                            </div>
+
+                            {{-- <div class="form-group">
                                 <label for="exampleInputPassword1">ชื่อ</label>
                                 <input type="text" class="form-control" id="first_name" name="first_name" placeholder="ชื่อลูกค้า">
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">นามสกุล</label>
                                 <input type="text" class="form-control" id="last_name" name="last_name" placeholder="นามสกุลลูกค้า">
-                            </div>
+                            </div> --}}
+
                             <div class="form-group">
                                 <label for="exampleInputPassword1">อายุ</label>
                                 <input type="text" class="form-control" id="age" name="age" placeholder="อายุลูกค้า">
                             </div>
+
                             <div class="form-group">
                                 <label for="exampleInputPassword1">เบอร์โทร</label>
                                 <input type="text" class="form-control" id="tel" name="tel" placeholder="เบอร์โทรลูกค้า">
                             </div>
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">เลขบัตรประชาชน</label>
-                                <input type="text" class="form-control" id="cid" name="cid" placeholder="เลขบัตรประชาชนลูกค้า">
-                            </div>
+
                             <div class="form-group">
                                 <label for="exampleInputPassword1">ชื่อผู้ใช้งาน</label>
                                 <input type="text" class="form-control" id="username" name="username" placeholder="ตั้งค่าชื่อผู้ใช้งาน">
                             </div>
+
                             <div class="form-group">
                                 <label for="exampleInputPassword1">รหัสผ่าน</label>
                                 <input type="password" class="form-control" id="password" name="cid" placeholder="ตั้งค่ารหัสผ่าน">
                             </div>
+                            
                             <div class="form-group">
                                 <label for="exampleInputPassword1">ยืนยันรหัสผ่าน</label>
                                 <input type="password" class="form-control" id="cid" name="cid" placeholder="ใส่รหัสผ่านอีกครั้ง">
@@ -175,7 +192,7 @@
 <script>
     $('.submitBtn').on('click', function () {
         Swal.fire({
-                title: 'Error!',
+                title: 'ยืนยันการบันทึกข้อมูล',
                 text: 'Do you want to continue',
                 icon: 'warning',
                 confirmButtonText: 'ok',

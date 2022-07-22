@@ -504,7 +504,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">เพิ่มข้อมูลบัญชีลูกค้า</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -512,21 +512,107 @@
                 <div class="modal-body">
                     <form>
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                                placeholder="Enter email">
+                            <label for="exampleInputEmail1">รหัสลูกค้า</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                placeholder="ระบุรหัสลูกค้า">
 
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputPassword1">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            <label for="exampleInputPassword1">ชื่อสินค้า</label>
+                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="ระบุชื่อสินค้า">
                         </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">ยี่ห้อสินค้า</label>
+                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="ระบุยี่ห้อสินค้า">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">รายละเอียด</label>
+                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="ระบุรายละอียด">
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <label class="input-group-text" for="inputGroupSelect01">ประเภทการผ่อน</label>
+                            </div>
+                            <select class="custom-select" id="inputGroupSelect01">
+                              <option selected>เลือกประเภทการผ่อน</option>
+                              <option value="1">ผ่อนไปใช้ไป</option>
+                              <option value="2">ผ่อนครบรับของ</option>
+                              <option value="3">วางดาวน์</option>
+                              <option value="4">อื่นๆ / ไม่ระบุ</option>
+                            </select>
+                          </div>
+
+                          <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <label class="input-group-text" for="inputGroupSelect01">ประเภทการส่งยอดผ่อน</label>
+                            </div>
+                            <select class="custom-select" id="inputGroupSelect01">
+                              <option selected>เลือกประเภทการส่งยอดผ่อน</option>
+                              <option value="1">รายวัน</option>
+                              <option value="2">รายวันเว้นวัน</option>
+                              <option value="3">รายสัปดาห์</option>
+                              <option value="4">รายเดือน</option>
+                              <option value="5">อื่นๆ / ไม่ระบุ</option>
+                            </select>
+                          </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">ส่วนลดหรือโปรโมชั่น</label>
+                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="ระบุส่วนลดหรือโปรโมชั่นที่ใช้">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">จำนวนเงินที่เปิดบิลผ่อน</label>
+                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="ระบุจำนวนเงินที่ลูกค้าเปิดบิลผ่อน">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">จำนวนเงินที่เปิดบิลผ่อน</label>
+                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="ระบุจำนวนเงินที่ลูกค้าเปิดบิลผ่อน">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">ราคาสินค้า</label>
+                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="ระบุราคาสินค้า">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">ยอดผ่อนคงเหลือ</label>
+                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="ระบุยอดผ่อนคงเหลือ">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">ยอดผ่อนคงเหลือ</label>
+                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="ระบุยอดผ่อนคงเหลือ">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">เปอร์เซนต์การผ่อนปัจจุบัน</label>
+                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="แสดงเปอร์เซนต์การผ่อนปัจจุบัน">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">เปอร์เซนต์การพิจารณา</label>
+                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="แสดงเปอร์เซนต์การพิจารณา">
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <label class="input-group-text" for="inputGroupSelect01">สถานะการผ่อน</label>
+                            </div>
+                            <select class="custom-select" id="inputGroupSelect01">
+                              <option selected>เลือกสถานะการผ่อน</option>
+                              <option value="1">ผ่านการพิจารณา/option>
+                              <option value="2">อยู่ระหว่างการพิจารณา</option>
+                              <option value="3">ยกเลิกการผ่อน</option>
+                              <option value="4">พักการผ่อน</option>
+                              <option value="5">รอตรวจสอบเอกสาร</option>
+                              <option value="6">รับสินค้า</option>
+                              <option value="7">ค้างชำระ</option>
+                              <option value="8">ชำระการผ่อนครบ</option>
+                              <option value="9">อื่นๆ / ไม่ระบุ</option>
+                            </select>
+                          </div>
 
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">ยกเลิก</button>
+                    <button type="button" class="btn btn-primary">บันทึก</button>
                 </div>
             </div>
         </div>
