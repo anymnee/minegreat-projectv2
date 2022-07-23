@@ -616,7 +616,7 @@
                             <input type="text" class="form-control" aria-label="Sizing example input"
                                 aria-describedby="inputGroup-sizing-default" placeholder="แสดงเปอร์เซนต์ชำระปัจจุบันของลูกค้า">
                         </div>
-
+                        
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
                                 <span class="input-group-text">การพิจารณา</span>
@@ -638,7 +638,7 @@
                             </div>
                             <select class="custom-select" id="inputGroupSelect01">
                                 <option selected>เลือกสถานะการผ่อน</option>
-                                <option value="1">ผ่านการพิจารณา</option>
+                                <option value="1">ผ่านการพิจารณา/option>
                                 <option value="2">อยู่ระหว่างการพิจารณา</option>
                                 <option value="3">ยกเลิกการผ่อน</option>
                                 <option value="4">พักการผ่อน</option>

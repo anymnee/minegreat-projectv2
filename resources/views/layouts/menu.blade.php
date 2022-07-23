@@ -322,16 +322,6 @@
 
             @stack('scripts')
 
-
-            @push('css')
-<style>
-    .test {
-        background: red;
-        border-radius: 50px;
-    }
-</style>
-@endpush
-
 </body>
 
 </html>
