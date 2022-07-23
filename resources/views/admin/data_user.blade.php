@@ -173,7 +173,7 @@
                 
 
                     {{-- <div class="form-group">
-                                <label for="exampleInputPassword1">ชื่อ</label>
+                                <label for="exampleInputPassword1">ชื่อลูกค้า</label>
                                 <input type="text" class="form-control" id="first_name" name="first_name" placeholder="ชื่อลูกค้า">
                             </div>
                             <div class="form-group">
