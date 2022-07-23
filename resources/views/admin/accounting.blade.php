@@ -511,102 +511,144 @@
                 </div>
                 <div class="modal-body">
                     <form>
-                        <div class="form-group">
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroup-sizing-default">รหัสลูกค้า</span>
+                            </div>
+                            <input type="text" class="form-control" aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-default" placeholder="ระบุรหัสลูกค้า">
+                        </div>
+
+                        {{-- <div class="form-group">
                             <label for="exampleInputEmail1">รหัสลูกค้า</label>
                             <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                                 placeholder="ระบุรหัสลูกค้า">
+                        </div> --}}
 
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputPassword1">ชื่อสินค้า</label>
-                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="ระบุชื่อสินค้า">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputPassword1">ยี่ห้อสินค้า</label>
-                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="ระบุยี่ห้อสินค้า">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputPassword1">รายละเอียด</label>
-                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="ระบุรายละอียด">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroup-sizing-default">ชื่อสินค้า</span>
+                            </div>
+                            <input type="text" class="form-control" aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-default" placeholder="ระบุชื่อของสินค้าที่ผ่อน">
                         </div>
 
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
-                              <label class="input-group-text" for="inputGroupSelect01">ประเภทการผ่อน</label>
+                                <span class="input-group-text" id="inputGroup-sizing-default">แบรนด์สินค้า</span>
                             </div>
-                            <select class="custom-select" id="inputGroupSelect01">
-                              <option selected>เลือกประเภทการผ่อน</option>
-                              <option value="1">ผ่อนไปใช้ไป</option>
-                              <option value="2">ผ่อนครบรับของ</option>
-                              <option value="3">วางดาวน์</option>
-                              <option value="4">อื่นๆ / ไม่ระบุ</option>
-                            </select>
-                          </div>
+                            <input type="text" class="form-control" aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-default" placeholder="ระบุแบรนด์ของสินค้า">
+                        </div>
 
-                          <div class="input-group mb-3">
+                        <div class="input-group mb-3">
                             <div class="input-group-prepend">
-                              <label class="input-group-text" for="inputGroupSelect01">ประเภทการส่งยอดผ่อน</label>
+                                <span class="input-group-text" id="inputGroup-sizing-default">รายละเอียด</span>
+                            </div>
+                            <input type="text" class="form-control" aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-default" placeholder="ระบุรายละเอียดของสินค้า">
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="inputGroupSelect01">ประเภทการผ่อน</label>
                             </div>
                             <select class="custom-select" id="inputGroupSelect01">
-                              <option selected>เลือกประเภทการส่งยอดผ่อน</option>
-                              <option value="1">รายวัน</option>
-                              <option value="2">รายวันเว้นวัน</option>
-                              <option value="3">รายสัปดาห์</option>
-                              <option value="4">รายเดือน</option>
-                              <option value="5">อื่นๆ / ไม่ระบุ</option>
+                                <option selected>เลือกประเภทการผ่อน</option>
+                                <option value="1">ผ่อนไปใช้ไป</option>
+                                <option value="2">ผ่อนครบรับของ</option>
+                                <option value="3">วางดาวน์</option>
+                                <option value="4">อื่นๆ / ไม่ระบุ</option>
                             </select>
-                          </div>
+                        </div>
 
-                        <div class="form-group">
-                            <label for="exampleInputPassword1">ส่วนลดหรือโปรโมชั่น</label>
-                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="ระบุส่วนลดหรือโปรโมชั่นที่ใช้">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="inputGroupSelect01">ประเภทการส่งยอดผ่อน</label>
+                            </div>
+                            <select class="custom-select" id="inputGroupSelect01">
+                                <option selected>เลือกประเภทการส่งยอดผ่อน</option>
+                                <option value="1">รายวัน</option>
+                                <option value="2">รายวันเว้นวัน</option>
+                                <option value="3">รายสัปดาห์</option>
+                                <option value="4">รายเดือน</option>
+                                <option value="5">อื่นๆ / ไม่ระบุ</option>
+                            </select>
                         </div>
-                        <div class="form-group">
-                            <label for="exampleInputPassword1">จำนวนเงินที่เปิดบิลผ่อน</label>
-                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="ระบุจำนวนเงินที่ลูกค้าเปิดบิลผ่อน">
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroup-sizing-default">ส่วนลดหรือโปรโมชั่น</span>
+                            </div>
+                            <input type="text" class="form-control" aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-default" placeholder="ระบุส่วนลดหรือโปรโมชั่นที่ใช้">
                         </div>
-                        <div class="form-group">
-                            <label for="exampleInputPassword1">จำนวนเงินที่เปิดบิลผ่อน</label>
-                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="ระบุจำนวนเงินที่ลูกค้าเปิดบิลผ่อน">
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroup-sizing-default">จำนวนเงินที่เปิดบิลผ่อน</span>
+                            </div>
+                            <input type="text" class="form-control" aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-default" placeholder="ระบุจำนวนเงินที่ลูกค้าเปิดบิลผ่อน">
                         </div>
-                        <div class="form-group">
-                            <label for="exampleInputPassword1">ราคาสินค้า</label>
-                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="ระบุราคาสินค้า">
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroup-sizing-default">ราคาสินค้า</span>
+                            </div>
+                            <input type="text" class="form-control" aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-default" placeholder="ระบุราคาผ่อนของสินค้า">
                         </div>
-                        <div class="form-group">
-                            <label for="exampleInputPassword1">ยอดผ่อนคงเหลือ</label>
-                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="ระบุยอดผ่อนคงเหลือ">
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroup-sizing-default">ยอดผ่อนคงเหลือ</span>
+                            </div>
+                            <input type="text" class="form-control" aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-default" placeholder="ระบุยอดผ่อนคงเหลือ">
                         </div>
-                        <div class="form-group">
-                            <label for="exampleInputPassword1">ยอดผ่อนคงเหลือ</label>
-                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="ระบุยอดผ่อนคงเหลือ">
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroup-sizing-default">เปอร์เซนต์การชำระปัจจุบัน</span>
+                            </div>
+                            <input type="text" class="form-control" aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-default" placeholder="แสดงเปอร์เซนต์ชำระปัจจุบันของลูกค้า">
                         </div>
-                        <div class="form-group">
-                            <label for="exampleInputPassword1">เปอร์เซนต์การผ่อนปัจจุบัน</label>
-                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="แสดงเปอร์เซนต์การผ่อนปัจจุบัน">
+                        
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">การพิจารณา</span>
+                            </div>
+                            <input type="text" aria-label="First name" class="form-control"
+                                placeholder="แสดง % การพิจารณา">
+                            <input type="text" aria-label="Last name" class="form-control"
+                                placeholder="แสดงจำนวนเงิน">
                         </div>
-                        <div class="form-group">
+
+                        {{-- <div class="form-group">
                             <label for="exampleInputPassword1">เปอร์เซนต์การพิจารณา</label>
                             <input type="text" class="form-control" id="exampleInputPassword1" placeholder="แสดงเปอร์เซนต์การพิจารณา">
-                        </div>
+                        </div> --}}
 
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
-                              <label class="input-group-text" for="inputGroupSelect01">สถานะการผ่อน</label>
+                                <label class="input-group-text" for="inputGroupSelect01">สถานะการผ่อน</label>
                             </div>
                             <select class="custom-select" id="inputGroupSelect01">
-                              <option selected>เลือกสถานะการผ่อน</option>
-                              <option value="1">ผ่านการพิจารณา/option>
-                              <option value="2">อยู่ระหว่างการพิจารณา</option>
-                              <option value="3">ยกเลิกการผ่อน</option>
-                              <option value="4">พักการผ่อน</option>
-                              <option value="5">รอตรวจสอบเอกสาร</option>
-                              <option value="6">รับสินค้า</option>
-                              <option value="7">ค้างชำระ</option>
-                              <option value="8">ชำระการผ่อนครบ</option>
-                              <option value="9">อื่นๆ / ไม่ระบุ</option>
+                                <option selected>เลือกสถานะการผ่อน</option>
+                                <option value="1">ผ่านการพิจารณา/option>
+                                <option value="2">อยู่ระหว่างการพิจารณา</option>
+                                <option value="3">ยกเลิกการผ่อน</option>
+                                <option value="4">พักการผ่อน</option>
+                                <option value="5">รอตรวจสอบเอกสาร</option>
+                                <option value="6">รับสินค้า</option>
+                                <option value="7">ค้างชำระ</option>
+                                <option value="8">ชำระการผ่อนครบ</option>
+                                <option value="9">อื่นๆ / ไม่ระบุ</option>
                             </select>
-                          </div>
+                        </div>
 
                     </form>
                 </div>
